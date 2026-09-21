@@ -14,25 +14,28 @@
   .kopf a { color:var(--grau); }
   .kopf h1 { color:var(--navy); font-size:1.7rem; margin:6px 0 6px; }
   .kopf p { color:var(--grau); margin:0; font-size:1rem; }
-  main { max-width:860px; margin:0 auto; padding-block:24px; }
-  .hinweis { background:var(--hell); border:1.75px solid var(--cyan); border-radius:14px;
-    padding:20px 22px; max-width:520px; }
-  .hinweis h2 { color:var(--navy); font-size:1.18rem; margin:0 0 6px; }
-  .hinweis p { margin:0; font-size:.96rem; line-height:1.5; color:#333; }
+  main { max-width:860px; margin:0 auto; padding-block:24px; display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; }
+  a.karte { display:block; background:var(--hell); border:1.75px solid var(--cyan); border-radius:14px;
+    padding:20px 22px; text-decoration:none; color:#222; transition:transform .12s, box-shadow .12s; }
+  a.karte:hover, a.karte:focus-visible { transform:translateY(-2px); box-shadow:0 4px 14px rgba(15,32,52,.14); }
+  .karte .emoji { font-size:1.7rem; display:block; margin-bottom:8px; }
+  .karte h2 { color:var(--navy); font-size:1.18rem; margin:0 0 6px; }
+  .karte p { margin:0; font-size:.96rem; line-height:1.5; color:#333; }
 </style>
 </head>
 <body>
 <div class="kopf">
   <div class="zurueck"><a href="../">&larr; Werkzeugkasten</a></div>
   <h1>Automatisierungstechnik</h1>
-  <p>Arduino-Projekte</p>
+  <p>Arduino-Projekte &middot; Temperatursteuerung</p>
 </div>
 <main>
-  <div class="hinweis">
-    <span style="font-size:1.7rem;">🤖</span>
-    <h2>Hier entsteht gerade etwas</h2>
-    <p>Das erste interaktive Material aus den Arduino-Projekten erscheint in K&uuml;rze an dieser Stelle.</p>
-  </div>
+  <a class="karte" href="lernwerkstatt.html">
+    <span class="emoji">🤖</span>
+    <h2>Lernwerkstatt Arduino</h2>
+    <p>Board, IDE und Steckbrett zum Anklicken &ndash; und Schritt f&uuml;r Schritt eine LED mit Vorwiderstand anschlie&szlig;en. Mit Quiz zu jedem Bereich.</p>
+  </a>
 </main>
 </body>
 </html>

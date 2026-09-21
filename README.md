@@ -9,6 +9,7 @@ index.html          Hub mit Bereichskarten
 elt/index.html      Bereich Elektrotechnik (NEXUS-Loft, IAH51)
 elt/ls-schalter.html   LS-App (CC-BY-Foto, self-contained)
 arduino/index.html  Bereich Automatisierungstechnik (Arduino)
+arduino/lernwerkstatt.html  Lernwerkstatt Arduino (Board, IDE, Steckbrett, LED anschliessen; QET-Element CC BY 3.0)
 ```
 
 ## Neue Seite einstellen (auch für die Arduino-Session)
