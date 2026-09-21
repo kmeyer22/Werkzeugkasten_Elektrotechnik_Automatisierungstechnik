@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Werkzeugkasten</title>
+<style>
+  :root { --navy:#0F2034; --cyan:#40A9DE; --hell:#E3EEF7; --grau:#595959; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:#222; font-family:'Segoe UI', system-ui, sans-serif;
+    padding-inline:16px; }
+  .kopf { max-width:860px; margin:0 auto; padding-block:26px 14px; border-bottom:4px solid var(--cyan); }
+  .kopf h1 { color:var(--navy); font-size:2rem; margin:0 0 6px; }
+  .kopf p { color:var(--grau); margin:0; font-size:1.02rem; }
+  main { max-width:860px; margin:0 auto; padding-block:26px; display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; }
+  a.karte { display:block; background:var(--hell); border:1.75px solid var(--cyan); border-radius:14px;
+    padding:22px 24px; text-decoration:none; color:#222; transition:transform .12s, box-shadow .12s; }
+  a.karte:hover, a.karte:focus-visible { transform:translateY(-2px); box-shadow:0 4px 14px rgba(15,32,52,.14); }
+  .karte .emoji { font-size:1.9rem; display:block; margin-bottom:8px; }
+  .karte h2 { color:var(--navy); font-size:1.25rem; margin:0 0 6px; }
+  .karte p { margin:0; font-size:.98rem; line-height:1.5; color:#333; }
+  .fuss { max-width:860px; margin:0 auto; padding-block:14px 22px; color:var(--grau); font-size:.85rem;
+    border-top:1px solid #d9e2ea; }
+</style>
+</head>
+<body>
+<div class="kopf">
+  <h1>Werkzeugkasten</h1>
+  <p>Interaktives Unterrichtsmaterial &middot; Elektro- und Automatisierungstechnik</p>
+</div>
+<main>
+  <a class="karte" href="elt/">
+    <span class="emoji">⚡</span>
+    <h2>Elektrotechnik</h2>
+    <p>Projekt Energieversorgung (NEXUS-Loft): der Leitungsschutzschalter von innen &mdash; erkunden, Ausl&ouml;sen verstehen, Quiz.</p>
+  </a>
+  <a class="karte" href="arduino/">
+    <span class="emoji">🤖</span>
+    <h2>Automatisierungstechnik</h2>
+    <p>Arduino-Projekte: Material erscheint hier nach und nach.</p>
+  </a>
+</main>
+<div class="fuss">
+  Privat betriebene Unterrichts-Seite &middot; Fotos unter freier Lizenz, Nachweis auf der jeweiligen Seite
+</div>
+</body>
+</html>
